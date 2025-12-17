@@ -1,4 +1,5 @@
 import { Linkedin, Twitter } from "lucide-react";
+import modeoLogo from "@/assets/modeo-logo.png";
 
 const Footer = () => {
   return (
@@ -7,7 +8,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="md:col-span-2">
-            <h3 className="text-2xl font-bold text-background mb-4">MODEO</h3>
+            <img src={modeoLogo} alt="MODEO" className="h-12 w-auto mb-4 brightness-0 invert" />
             <p className="text-background/70 mb-6 max-w-md leading-relaxed">
               A next-generation professional services firm helping enterprises reinvent their businesses through technology and human ingenuity.
             </p>

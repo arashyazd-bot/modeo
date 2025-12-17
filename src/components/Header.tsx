@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import modeoLogo from "@/assets/modeo-logo.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,8 +18,8 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border">
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16">
-          <a href="/" className="text-2xl font-bold tracking-tight text-foreground">
-            MODEO
+          <a href="/" className="flex items-center gap-2">
+            <img src={modeoLogo} alt="MODEO" className="h-10 w-auto" />
           </a>
 
           {/* Desktop Navigation */}
