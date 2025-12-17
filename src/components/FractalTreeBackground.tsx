@@ -16,15 +16,17 @@ const FractalTreeBackground = () => {
   const treeRef = useRef<Branch | null>(null);
   const growthStartTimeRef = useRef<number>(0);
   const isGrownRef = useRef<boolean>(false);
+  const parallaxOffsetRef = useRef<number>(0);
 
   const TEAL_COLOR = "#20B2AA";
   const GLOBAL_ALPHA = 0.3;
-  const GROWTH_DURATION = 2500; // ms
+  const GROWTH_DURATION = 5500; // ms - slower growth
   const MAX_DEPTH = 10;
   const BRANCH_ANGLE_SPREAD = Math.PI / 5;
   const LENGTH_DECAY = 0.72;
   const SWAY_AMPLITUDE = 0.02; // radians
   const SWAY_SPEED = 0.001;
+  const PARALLAX_FACTOR = 0.3; // Tree moves at 30% of scroll speed
 
   const generateTree = useCallback((
     startX: number,
@@ -119,6 +121,10 @@ const FractalTreeBackground = () => {
     // Clear canvas
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
+    // Apply parallax transform
+    ctx.save();
+    ctx.translate(0, parallaxOffsetRef.current);
+
     // Set styling
     ctx.strokeStyle = TEAL_COLOR;
     ctx.globalAlpha = GLOBAL_ALPHA;
@@ -139,6 +145,8 @@ const FractalTreeBackground = () => {
     // Update growth and draw
     updateGrowthProgress(tree, globalProgress);
     drawBranch(ctx, tree, timestamp);
+
+    ctx.restore();
 
     animationRef.current = requestAnimationFrame(animate);
   }, [drawBranch, updateGrowthProgress]);
@@ -170,6 +178,10 @@ const FractalTreeBackground = () => {
       initializeTree();
     };
 
+    const handleScroll = () => {
+      parallaxOffsetRef.current = window.scrollY * PARALLAX_FACTOR;
+    };
+
     let resizeTimeout: NodeJS.Timeout;
     const debouncedResize = () => {
       clearTimeout(resizeTimeout);
@@ -177,10 +189,12 @@ const FractalTreeBackground = () => {
     };
 
     window.addEventListener("resize", debouncedResize);
+    window.addEventListener("scroll", handleScroll, { passive: true });
 
     return () => {
       cancelAnimationFrame(animationRef.current);
       window.removeEventListener("resize", debouncedResize);
+      window.removeEventListener("scroll", handleScroll);
       clearTimeout(resizeTimeout);
     };
   }, [animate, initializeTree]);
