@@ -20,6 +20,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           <a href="/" className="flex items-center gap-2">
             <img src={modeoLogo} alt="MODEO" className="h-10 w-auto" />
+            <span className="text-xl font-bold text-foreground">MODEO</span>
           </a>
 
           {/* Desktop Navigation */}
