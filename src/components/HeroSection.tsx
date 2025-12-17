@@ -1,18 +1,22 @@
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroBg from "@/assets/hero-bg.jpg";
+import FractalTreeBackground from "@/components/FractalTreeBackground";
 
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroBg})` }}
       />
       
       {/* Overlay - Quiet Luxury gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[hsl(212,60%,13%)] via-[hsl(212,50%,18%)] to-[hsl(177,70%,25%)] opacity-95" />
+      <div className="absolute inset-0 z-[1] bg-gradient-to-br from-[hsl(212,60%,13%)] via-[hsl(212,50%,18%)] to-[hsl(177,70%,25%)] opacity-95" />
+
+      {/* Fractal Tree Background */}
+      <FractalTreeBackground />
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-6 pt-20">
