@@ -8,7 +8,11 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="md:col-span-2">
-            <img src={modeoLogo} alt="MODEO" className="h-12 w-auto mb-4 brightness-0 invert" />
+            <img
+              src={modeoLogo}
+              alt="Modeo company logo"
+              className="h-12 w-auto mb-4 object-contain"
+            />
             <p className="text-background/70 mb-6 max-w-md leading-relaxed">
               A next-generation professional services firm helping enterprises reinvent their businesses through technology and human ingenuity.
             </p>
