@@ -63,7 +63,7 @@ const HeroSection = () => {
         <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl">
           {[
             { value: "120+", label: "Countries" },
-            { value: "500+", label: "Enterprise Clients" },
+            { value: "50+", label: "Enterprise Clients" },
             { value: "98%", label: "Client Satisfaction" },
             { value: "100+", label: "Projects Delivered" },
           ].map((stat) => (
