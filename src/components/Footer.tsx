@@ -64,14 +64,6 @@ const Footer = () => {
                   hello@modeo.io
                 </a>
               </li>
-              <li>
-                <a
-                  href="tel:+18184869468"
-                  className="hover:text-background transition-colors"
-                >
-                  +1 (818) 486-9468
-                </a>
-              </li>
             </ul>
           </div>
         </div>
