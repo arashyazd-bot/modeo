@@ -33,7 +33,7 @@ const HeroSection = () => {
           </h1>
           
           <p className="text-lg md:text-xl text-white/90 max-w-2xl mb-10 leading-relaxed">
-            We combine deep industry expertise with cutting-edge technology to drive transformation at scale. From strategy to execution, we help enterprises unlock new value and thrive in an ever-changing world.
+            We combine technical expertise with AI to build products that solve real problems and help businesses transform. From strategy to shipping, we move fast and build what matters.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">

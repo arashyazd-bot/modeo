@@ -23,8 +23,8 @@ const focusAreas = [
   },
   {
     icon: Factory,
-    title: "Industry X",
-    description: "Reinvent manufacturing and operations with digital twins and smart factories.",
+    title: "Automation",
+    description: "Streamline operations and reduce manual work with intelligent automation and workflow orchestration.",
   },
 ];
 

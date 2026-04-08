@@ -1,4 +1,4 @@
-import { Linkedin, Twitter } from "lucide-react";
+import { Linkedin } from "lucide-react";
 import modeoLogo from "@/assets/modeo-logo.png";
 
 const Footer = () => {
@@ -25,13 +25,6 @@ const Footer = () => {
                 aria-label="LinkedIn"
               >
                 <Linkedin className="h-5 w-5 text-background" />
-              </a>
-              <a
-                href="#"
-                className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center hover:bg-background/20 transition-colors"
-                aria-label="Twitter"
-              >
-                <Twitter className="h-5 w-5 text-background" />
               </a>
             </div>
           </div>
@@ -60,6 +53,14 @@ const Footer = () => {
               <li>San Francisco, CA</li>
               <li>
                 <a
+                  href="tel:+15106198940"
+                  className="hover:text-background transition-colors"
+                >
+                  (510) 619-8940
+                </a>
+              </li>
+              <li>
+                <a
                   href="mailto:hello@modeo.io"
                   className="hover:text-background transition-colors"
                 >
@@ -72,7 +73,7 @@ const Footer = () => {
 
         <div className="mt-12 pt-8 border-t border-background/10 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-background/50 text-sm">
-            © {new Date().getFullYear()} Modeo. All rights reserved.
+            © {new Date().getFullYear()} MODEO LLC. All rights reserved.
           </p>
           <div className="flex gap-6 text-sm text-background/50">
             <a href="/privacy" className="hover:text-background transition-colors">
