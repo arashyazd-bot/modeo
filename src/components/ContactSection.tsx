@@ -51,10 +51,10 @@ const ContactSection = () => {
                 <div>
                   <p className="font-semibold text-foreground mb-1">Phone</p>
                   <a
-                    href="tel:+18184869468"
+                    href="tel:+15106198940"
                     className="text-primary hover:underline"
                   >
-                    (818) 486-9468
+                    (510) 619-8940
                   </a>
                 </div>
               </div>
