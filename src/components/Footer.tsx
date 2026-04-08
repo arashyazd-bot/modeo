@@ -40,7 +40,7 @@ const Footer = () => {
           <div>
             <h4 className="text-background font-semibold mb-4">Services</h4>
             <ul className="space-y-3">
-              {["Strategy", "Consulting", "Technology", "Operations", "Song"].map((item) => (
+              {["Strategy", "Consulting", "Technology", "Operations", "Product Design"].map((item) => (
                 <li key={item}>
                   <a
                     href="#services"
@@ -75,10 +75,10 @@ const Footer = () => {
             © {new Date().getFullYear()} Modeo. All rights reserved.
           </p>
           <div className="flex gap-6 text-sm text-background/50">
-            <a href="#" className="hover:text-background transition-colors">
+            <a href="/privacy" className="hover:text-background transition-colors">
               Privacy Policy
             </a>
-            <a href="#" className="hover:text-background transition-colors">
+            <a href="/terms" className="hover:text-background transition-colors">
               Terms of Service
             </a>
           </div>

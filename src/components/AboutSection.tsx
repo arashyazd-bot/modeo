@@ -18,8 +18,8 @@ const values = [
   },
   {
     icon: Globe,
-    title: "Global Scale",
-    description: "Local expertise backed by global resources, serving clients across 120+ countries.",
+    title: "Real Impact",
+    description: "Building products that solve meaningful problems for families and businesses.",
   },
 ];
 
@@ -34,9 +34,16 @@ const AboutSection = () => {
           <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6">
             Technology Meets Human Ingenuity
           </h2>
-          <p className="text-muted-foreground text-lg leading-relaxed">
-            We are a next-generation professional services firm, combining deep industry expertise with cutting-edge technology to help enterprises reinvent themselves. Our mission is to be the most AI-enabled, client-focused firm globally—creating value through innovation and partnership.
+          <p className="text-muted-foreground text-lg leading-relaxed mb-8">
+            MODEO is a technology company founded in San Francisco, combining deep industry expertise with cutting-edge AI to solve real-world problems. We build products and provide consulting that help businesses and families thrive in the age of AI.
           </p>
+          <div className="inline-flex items-center gap-4 bg-card border rounded-xl px-6 py-4">
+            <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-lg">AY</div>
+            <div className="text-left">
+              <p className="font-bold text-foreground">Arash Yazdani</p>
+              <p className="text-sm text-muted-foreground">Founder & CEO</p>
+            </div>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

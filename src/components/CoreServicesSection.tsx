@@ -24,7 +24,7 @@ const services = [
   },
   {
     icon: Sparkles,
-    title: "Song",
+    title: "Product Design",
     description: "Reimagining customer experiences through creative and digital innovation.",
   },
 ];

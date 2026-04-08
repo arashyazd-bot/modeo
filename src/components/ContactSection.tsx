@@ -1,4 +1,4 @@
-import { MapPin, Mail, ArrowRight } from "lucide-react";
+import { MapPin, Mail, Phone, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const ContactSection = () => {
@@ -44,6 +44,21 @@ const ContactSection = () => {
                 </div>
               </div>
 
+              <div className="flex items-start gap-4">
+                <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-accent flex items-center justify-center">
+                  <Phone className="h-5 w-5 text-primary" />
+                </div>
+                <div>
+                  <p className="font-semibold text-foreground mb-1">Phone</p>
+                  <a
+                    href="tel:+18184869468"
+                    className="text-primary hover:underline"
+                  >
+                    (818) 486-9468
+                  </a>
+                </div>
+              </div>
+
             </div>
           </div>
 
@@ -68,10 +83,10 @@ const ContactSection = () => {
 
             <div className="mt-10 pt-8 border-t border-primary-foreground/20">
               <p className="text-primary-foreground/60 text-sm mb-2">
-                Trusted by enterprises worldwide
+                Built with leading technology
               </p>
               <div className="flex flex-wrap gap-4 text-primary-foreground/80 text-sm font-medium">
-                <span>AWS Partner</span>
+                <span>AWS</span>
                 <span>•</span>
                 <span>Google Cloud</span>
                 <span>•</span>

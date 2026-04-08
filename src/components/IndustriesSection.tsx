@@ -33,10 +33,10 @@ const IndustriesSection = () => {
               Serving Every Industry, Everywhere
             </h2>
             <p className="text-muted-foreground text-lg mb-8 leading-relaxed">
-              We bring deep sector knowledge and global scale to enterprises across diverse industries in over 120 countries. Our expertise spans the full spectrum of business challenges, from emerging disruptors to established market leaders.
+              We bring deep sector knowledge to enterprises across diverse industries. Our expertise spans the full spectrum of business challenges, from emerging disruptors to established market leaders.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed">
-              Partnering with technology leaders like <span className="text-foreground font-semibold">AWS</span>, <span className="text-foreground font-semibold">Google</span>, and <span className="text-foreground font-semibold">OpenAI</span>, we deliver cutting-edge solutions that drive real business value.
+              Built with leading technologies including <span className="text-foreground font-semibold">AWS</span>, <span className="text-foreground font-semibold">Google Cloud</span>, and <span className="text-foreground font-semibold">OpenAI</span>, we deliver cutting-edge solutions that drive real business value.
             </p>
           </div>
 
